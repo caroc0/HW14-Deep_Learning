@@ -2,27 +2,32 @@
 
 ![deep-learning.jpg](Images/deep-learning.jpg)
 
+---
+
+### Files
+
+[Closing Prices Starter Notebook](https://github.com/caroc0/HW14-Deep_Learning/blob/main/Starter_Code/lstm_stock_predictor_closing.ipynb)
+
+[FNG Starter Notebook](https://github.com/caroc0/HW14-Deep_Learning/blob/main/Starter_Code/lstm_stock_predictor_fng.ipynb)
+
+[Instalation Guides and Resources](https://github.com/caroc0/HW14-Deep_Learning/tree/main/Supplemental)
+
+- - -
+
 Due to the volatility of cryptocurrency speculation, investors will often try to incorporate sentiment from social media and news articles to help guide their trading strategies. One such indicator is the [Crypto Fear and Greed Index (FNG)](https://alternative.me/crypto/fear-and-greed-index/) which attempts to use a variety of data sources to produce a daily FNG value for cryptocurrency. You have been asked to help build and evaluate deep learning models using both the FNG values and simple closing prices to determine if the FNG indicator provides a better signal for cryptocurrencies than the normal closing price data.
 
 In this assignment, you will use deep learning recurrent neural networks to model bitcoin closing prices. One model will use the FNG indicators to predict the closing price while the second model will use a window of closing prices to predict the nth closing price.
 
-You will need to:
+- - -
+
+## Contents
+
 
 1. [Prepare the data for training and testing](#prepare-the-data-for-training-and-testing)
 2. [Build and train custom LSTM RNNs](#build-and-train-custom-lstm-rnns)
 3. [Evaluate the performance of each model](#evaluate-the-performance-of-each-model)
 
-- - -
-
-### Files
-
-[Closing Prices Starter Notebook](Starter_Code/lstm_stock_predictor_closing.ipynb)
-
-[FNG Starter Notebook](Starter_Code/lstm_stock_predictor_fng.ipynb)
-
-- - -
-
-## Instructions
+---
 
 ### Prepare the data for training and testing
 
@@ -50,11 +55,11 @@ Finally, use the testing data to evaluate each model and compare the performance
 
 Use the above to answer the following:
 
-> Which model has a lower loss?
+> Which model has a lower loss? -the one using the closing prices
 >
-> Which model tracks the actual values better over time?
+> Which model tracks the actual values better over time? -the one using the closing prices
 >
-> Which window size works best for the model?
+> Which window size works best for the model? -10 keeps the loss going down in the epochs the longest
 
 - - -
 
@@ -76,14 +81,6 @@ For training, use at least 10 estimators for both models.
 
 - - -
 
-### Submission
 
-* Create Jupyter Notebooks for the homework and host the notebooks on GitHub.
 
-* Include a Markdown that summarizes your homework and include this report in your GitHub repository.
-
-* Submit the link to your GitHub project to Bootcamp Spot.
-
-- - -
-
-© 2021 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+"© 2021 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved."Trilogy Education
